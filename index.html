@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcule o custo total da viagem</title>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Calcule o custo total da viagem</h1>
+<h2>Insira as informações</h2>
+
+    <form onsubmit="event.preventDefault(); calcularCustoViagem();">
+        <label for="distancia">Distância total da viagem (km):</label>
+        <input type="text" id="distancia" name="distancia"><br><br>
+
+        <label for="velocidadeMedia">Velocidade média do carro (km):</label>
+        <input type="text" id="velocidadeMedia" name="velocidadeMedia"><br><br>
+
+        <label for="eficiencia">Eficiência do carro (km por litro):</label>
+        <input type="text" id="eficiencia" name="eficiencia"><br><br>
+
+        <label for="precoCombustivel">Preço do combustivel (R$ por litro):</label>
+        <input type="text" id="precoCombustivel" name="precoCombustivel"><br><br>
+
+        <label for="valorPedagio">Preço do pedágio:</label>
+        <input type="text" id="valorPedagio" name="valorPedagio"><br><br>
+
+        <label for="quantidadePedagio">Quantidade de pedágios:</label>
+        <input type="text" id="quantidadePedagio" name="quantidadePedagio"><br><br>
+
+        <label for="lanches">Valor gasto com lanches:</label>
+        <input type="text" id="lanches" name="lanches"><br><br>
+
+        <input type="submit" value="Calcular">
+    </form>
+
+    <p id="resultado"></p>
+
+</body>
+</html>
